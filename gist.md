@@ -15,6 +15,8 @@ The regex `^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$` is used to match a v
 
 ## Regex Components
 
+In this section, we'll break down the various components of our regular expression. Understanding these elements will help you comprehend how the regex works as a whole. We will look at Anchors, Grouping Constructs, Bracket Expressions, and Quantifiers.
+
 ### Anchors
 
 `^` and `$` are the start and end of line anchors respectively. They ensure that the matching is done from the start to the end of the string.
