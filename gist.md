@@ -17,25 +17,25 @@ The regex `^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$` is designed to match
 
 Understanding the components of our regular expression is crucial to decipher how the regex operates as a whole. We'll delve into these elements, namely Anchors, Grouping Constructs, Bracket Expressions, and Quantifiers.
 
-#### Anchors
+### Anchors
 
 The `^` and `$` symbols are known as anchors. Specifically, they're the start and end of line anchors. Their role is to dictate that the pattern matching should begin from the start and conclude at the end of the string. Without these, our regex might match substrings within longer, invalid strings.
 
-#### Grouping Constructs
+### Grouping Constructs
 
 Grouping constructs are marked by parentheses `()`. These are crucial for capturing groups of characters. Our email-matching regex contains three distinct groups:
 - `([a-z0-9_\.-]+)`: Matches the local part of the email - the section before the '@' symbol.
 - `([\da-z\.-]+)`: Matches the domain of the email - the section following the '@' but before the final dot.
 - `([a-z\.]{2,6})`: Matches the domain extension of the email - the final part of the email after the last dot.
 
-#### Bracket Expressions
+### Bracket Expressions
 
 Bracket expressions `[]` are utilized to define a character class — a set of characters that the regex can match. 
 - `[a-z0-9_\.-]` matches any lowercase letter, any digit, an underscore, a dot, or a hyphen.
 - `[\da-z\.-]` matches any digit, any lowercase letter, a dot, or a hyphen.
 - `[a-z\.]{2,6}` matches any lowercase letter or a dot. It's constrained to match a minimum of 2 and a maximum of 6 characters due to the `{2,6}` quantifier.
 
-#### Quantifiers
+### Quantifiers
 
 Quantifiers in regex indicate how many instances of the previous element are required for a match. In this case, the plus sign `+` is the quantifier, implying "one or more". Therefore, `([a-z0-9_\.-]+)` and `([\da-z\.-]+)` denote one or more of the characters defined within the respective bracket expressions.
 
