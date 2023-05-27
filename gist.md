@@ -45,4 +45,4 @@ Understanding regex is greatly improved by practice. Try creating variations of 
 
 ## Author
 
-This tutorial was created by Weston Baker. For more resources and examples of his work, you can find him on his     [GitHub Profile](https://github.com/WesBaker0/Simple-Regex-Tutorial/blob/main/gist.md#bracket-expressions)
+This tutorial was created by Weston Baker. For more resources and examples of his work, you can find him on his     [GitHub Profile](https://github.com/WesBaker0)
